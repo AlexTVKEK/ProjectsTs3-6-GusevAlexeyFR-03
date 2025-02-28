@@ -1,1 +1,0 @@
-# ProjectsTs3-6-GusevAlexeyFR-03
