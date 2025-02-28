@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Лабораторная работа №5 - Таймеры и логгеры</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .logger-container {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .status {
+            font-size: 1.1em;
+            color: #666;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #timeDisplay {
+            font-family: monospace;
+            font-size: 1.2em;
+            text-align: center;
+            color: #2c3e50;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Лабораторная работа №5</h1>
+        <div id="timeDisplay">Время запуска: ожидание...</div>
+        <div class="status" id="statusMessage"></div>
+        <div class="logger-container" id="loggerOutput"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

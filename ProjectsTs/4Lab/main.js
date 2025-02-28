@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Transport_1 = require("./Transport");
+var owner1 = new Transport_1.Transport.OwnerClass("Иванов", "Константин", "Викторович", new Date(1973, 12, 20), Transport_1.Transport.TypeOfDocument.Passport, "1234", "567890");
+var car1 = new Transport_1.Transport.CarImpl("Toyota", "Elysion", 2021, "QWERTYU789632", "ABC123", owner1, Transport_1.Transport.BodyType.Sedan, Transport_1.Transport.CarClass.Luxury);
+var motorbike1 = new Transport_1.Transport.MotorbikeImpl("Эндуро ", "Kayo ", 2024, "SRFGGDFGHYHB8889", "XYZ789", owner1, "Sport", true);
+var storage = new Transport_1.Transport.VehicleStorageImpl();
+storage.addVehicle(car1);
+storage.addVehicle(motorbike1);
+storage.getAllVehicles().forEach(function (vehicle) { return vehicle.printInfo(); });
